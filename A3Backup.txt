@@ -1,0 +1,18 @@
+
+Comand Used To Backup the File As a Zip File and Displays All
+The Files that are Modified in the last 24 Hours.
+
+  find ~/ -type f -mtime 1 | tar -zcvf tarball.tar.gz -T-
+
+   
+   ~/ : The Root Directory Folder
+   -type : The Type specification (f for file d for directory)
+   -m : Filter for Modification
+   -a : for Access 
+   time 1 : Last 1 day Means 24 Hours (Could be any value )
+   | : Pipe
+   -z : for gz format
+   -c : Creating
+   v : verbose means tells every single info every single step
+   f : folder creation
+   -T- : Tells to display
