@@ -39,7 +39,7 @@ then
 
                deletetime=$(grep '^DeletionDate=' $file)
 
-                if [ -n "$files" ] && [ -n "$deletetime" ];
+                if [ "$files" ] && [ "$deletetime" ];
 
                 then
 
