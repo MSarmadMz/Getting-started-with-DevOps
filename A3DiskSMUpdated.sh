@@ -39,15 +39,9 @@ then
 
                deletetime=$(grep '^DeletionDate=' $file)
 
-                if [ "$files" ] && [ "$deletetime" ];
+                    echo "File:" $file
 
-                then
-
-                    echo "File: $file" 
-
-                    echo "Deletion Time: $deletetime"
-
-                 fi
+                    echo "Deletion Time:" $deletetime
 
                done
 
