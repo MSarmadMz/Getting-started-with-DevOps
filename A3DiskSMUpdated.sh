@@ -31,24 +31,21 @@ then
 
              trash-put "$file"
 
-  #Log File
-#             logfile=/home/sarmad-randhawa/Documents/Practice/DeletedFiles.txt
-
               for file in ~/.local/share/Trash/info/*.trashinfo;
 
               do
 
-               files=$(grep '^Path=' $file | cut -d'=' -f2-)
+               files=$(grep '^Path=' $file)
 
-               deletetime=$(grep '^DeletionDate=' $file | cut -d'=' -f2-)
+               deletetime=$(grep '^DeletionDate=' $file)
 
                 if [ -n "$files" ] && [ -n "$deletetime" ];
 
                 then
 
-                    echo "File: $file" # >>$logfile"
+                    echo "File: $file" 
 
-                    echo "Deletion Time: $deletetime" # >>$logfile"
+                    echo "Deletion Time: $deletetime"
 
                  fi
 
