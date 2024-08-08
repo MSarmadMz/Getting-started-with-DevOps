@@ -46,7 +46,7 @@ echo "Checking the Trash Directory for Files Older than 48 Hours "
 
 currenttime=$(date +%s)
 
-seconds=$((1 * 3600))
+seconds=$((48 * 3600))
 
  for file in ~/.local/share/Trash/info/*.trashinfo;
 
