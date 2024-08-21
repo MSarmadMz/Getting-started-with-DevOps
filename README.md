@@ -1,2 +1,2 @@
 # Linux-CLI
-Getting Started with Linux Command Line Integration.
+# Getting Started with DevOps
