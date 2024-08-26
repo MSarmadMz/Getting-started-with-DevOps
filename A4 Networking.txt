@@ -1,0 +1,28 @@
+
+Networking Assignment
+"Given these requirements
+Base address: 142.150.235.0
+Network mask: 255.255.255.224
+Broadcast address: 142.150.235.31
+Reserved Router address: 142.150.235.1
+a) What is the address of the assigned subnetwork and what is the extended network prefix?
+b) Which IP addresses can I use to configure the computers in my lab?
+c) Suppose I wanted to subdivide the assigned address block into 4 smaller subnetworks of equal size. How large are these networks, and how many IP addresses can I assign in each subnetwork?
+
+ANSWERS 
+A)  1)The Extended Network Prefix is : /27
+      2) Address of Subnetwork will be same as Base Address that is                      
+          142.150.235.0/27
+B) The IP Addresses you can use to configure in your lab are ranging from
+              142.150.235.2/27   to     142.150.235.30/27
+        Including the Network Address and BroadCast and Reserved IP we have total   
+        32 Addresses.
+C) NOW, Dividing into 4 smaller subnetworks of equal size :
+   1) These networks will range from 
+           1.1) 142.150.235.0/30  to   142.150.235.7/30 
+            1.2)   142.150.235.8/30  to   142.150.235.15/30 
+            1.3)   142.150.235.16/30  to   142.150.235.23/30 
+            1.4)   142.150.235.24/30  to   142.150.235.31/30 
+  2) In each network you can Assign 6 IP's as 1st and Last IP's are assigned 
+       to Network Address and Broadcast Address. 
+             
